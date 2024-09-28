@@ -1,0 +1,12 @@
+def arvore_natal(niveis):
+    # Desenha cada nível da árvore
+    for i in range(niveis):
+        # Desenha as folhas da árvore
+        for j in range(i + 1):
+            print(" " * (niveis - j) + "*" * (2 * j + 1))
+    # Desenha o tronco da árvore
+    print(" " * niveis + "|")
+
+# Definir o número de níveis para a árvore
+niveis = 5
+arvore_natal(niveis)
